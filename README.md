@@ -41,16 +41,16 @@ When water, steps, or sleep reaches its saved daily goal, the Dashboard displays
 ## Website Screenshots
 
 ### Home Page
-![Home Page](docs/screenshots/home.png)
+![Home Page](docs/home.png)
 
 ### About Page
-![About Page](docs/screenshots/about.png)
+![About Page](docs/about.png)
 
 ### Features Page
-![Features Page](docs/screenshots/features.png)
+![Features Page](docs/features.png)
 
 ### Dashboard Page
-![Dashboard Page](docs/screenshots/dashboard.png)
+![Dashboard Page](docs/dashboard.png)
 
 ### Contact Page
-![Contact Page](docs/screenshots/contact.png)
+![Contact Page](docs/contact.png)
