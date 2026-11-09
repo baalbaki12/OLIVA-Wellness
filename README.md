@@ -35,3 +35,22 @@ This is a frontend student project. React, Tailwind, and Babel are loaded from C
 
 ## Goal achievement messages
 When water, steps, or sleep reaches its saved daily goal, the Dashboard displays a congratulation message. The message updates automatically when values or goals change. The message styling is in `src/styles/goals.css`.
+
+
+
+## Website Screenshots
+
+### Home Page
+![Home Page](docs/screenshots/home.png)
+
+### About Page
+![About Page](docs/screenshots/about.png)
+
+### Features Page
+![Features Page](docs/screenshots/features.png)
+
+### Dashboard Page
+![Dashboard Page](docs/screenshots/dashboard.png)
+
+### Contact Page
+![Contact Page](docs/screenshots/contact.png)
