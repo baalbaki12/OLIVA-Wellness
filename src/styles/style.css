@@ -1,0 +1,9 @@
+/* Main styles: one file for each part of the website. */
+@import url("./theme.css");
+@import url("./navbar.css");
+@import url("./home.css");
+@import url("./dashboard.css");
+@import url("./pages.css");
+@import url("./footer.css");
+
+@import url("./goals.css");

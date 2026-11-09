@@ -1,0 +1,5 @@
+/* About, Features, Contact */
+.oliva-inner-page { background:radial-gradient(circle at 90% 8%,#ead9b8 0,transparent 30%); }
+.oliva-inner-page h1 { color:var(--olive-dark); }
+.oliva-inner-page article,.oliva-inner-page form { background:#fff9ed !important; border:1px solid #e2cfaa !important; box-shadow:0 8px 25px #5a4c3012; }
+.oliva-inner-page button { border-radius:24px; }

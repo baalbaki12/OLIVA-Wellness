@@ -1,0 +1,16 @@
+/* Dashboard cards and trackers */
+.oliva-dashboard { position:relative; }
+.oliva-dashboard:before { content:""; position:absolute; right:4%; top:15px; width:125px; height:125px; background:url('../assets/olive-branch.svg') center/contain no-repeat; opacity:.16; pointer-events:none; }
+.oliva-dashboard h1 { font-size:clamp(2.6rem,5vw,4.2rem); }
+.oliva-dashboard article,.oliva-dashboard form,.oliva-dashboard section.rounded-3xl { background:rgba(255,250,240,.94) !important; border:1px solid #dfcba5 !important; box-shadow:0 8px 22px #6c4b2520; border-radius:20px !important; }
+.oliva-dashboard .tracker-grid>*,.oliva-dashboard .extra-grid>* { position:relative; }
+.oliva-dashboard .tracker-grid>*:before { content:"✦"; position:absolute; right:23px; top:15px; color:#bc9c62; font-size:19px; }
+.oliva-dashboard input { background:#fffaf0; border:1px solid #d5c6a7; }
+.oliva-dashboard button[type=submit] { background:var(--olive) !important; color:white; }
+.oliva-dashboard button { border-radius:20px; }
+.oliva-dashboard .dashboard-heading { text-align:center; margin-bottom:25px; }
+.oliva-dashboard .dashboard-heading h1:after { content:"❧"; display:block; font-family:Georgia,serif; font-size:26px; color:#b99453; margin-top:6px; }
+.oliva-dashboard .extra-grid { margin-top:30px; }
+.oliva-dashboard .tracker-grid { margin-top:30px; }
+.oliva-dashboard .extra-grid button[aria-pressed=true] { background:var(--olive) !important; color:white !important; }
+.oliva-dashboard .rounded-full.bg-\[\#536b4c\] { background:var(--olive) !important; }

@@ -1,0 +1,9 @@
+{
+  "name": "oliva-wellness",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A React and Tailwind CSS Mediterranean wellness tracking university project",
+  "scripts": {
+    "start": "node server.js"
+  }
+}

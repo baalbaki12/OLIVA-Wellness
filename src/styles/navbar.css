@@ -1,0 +1,8 @@
+/* Navbar */
+.oliva-navbar { background:rgba(255,249,237,.97) !important; border-bottom:1px solid #dfd0af !important; box-shadow:0 3px 15px #483c2410; }
+.oliva-navbar nav { min-height:82px; }
+.oliva-navbar nav>button:first-child span { font-size:29px; color:var(--olive-dark); letter-spacing:2px; }
+.oliva-navbar nav>button:first-child img { width:53px; height:53px; }
+.oliva-navbar nav>div button { border-radius:28px; padding:10px 14px; }
+.oliva-navbar nav>div button:hover { background:#eee4c8; }
+.oliva-navbar nav>div button.active-page { background:var(--olive); color:white !important; }

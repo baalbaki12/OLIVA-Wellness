@@ -1,0 +1,15 @@
+/* OLIVA colors and common styles */
+:root { --olive:#46552b; --olive-dark:#29351f; --sand:#f6eddb; --cream:#fff9ed; --clay:#ae6e45; --gold:#c4a36a; }
+html { scroll-behavior:smooth; }
+body { margin:0; min-width:320px; color:var(--olive-dark); background:#f9f2e5; font-family:'DM Sans',Arial,sans-serif; }
+.oliva-app { background:linear-gradient(115deg,#faf2e3,#fffaf0 52%,#f6ebd8); color:var(--olive-dark); min-height:100vh; }
+.font-serif { font-family:'Playfair Display',Georgia,serif !important; font-weight:600; }
+button,input,textarea { font:inherit; }
+button { cursor:pointer; }
+button:focus-visible,input:focus-visible,textarea:focus-visible { outline:3px solid #b18d50; outline-offset:2px; }
+.page-enter { animation:fadeIn .25s ease-out; }
+@keyframes fadeIn { from { opacity:.3; transform:translateY(5px) } to { opacity:1; transform:translateY(0) } }
+.oliva-app button { transition:background .2s,transform .2s; }
+.oliva-app button:hover { transform:translateY(-1px); }
+/* Traditional geometric corner decoration, kept subtle for readability. */
+.arabic-pattern { background-image:repeating-linear-gradient(45deg,transparent 0 12px,rgba(162,119,66,.10) 12px 14px,transparent 14px 26px),repeating-linear-gradient(-45deg,transparent 0 12px,rgba(71,90,49,.09) 12px 14px,transparent 14px 26px); }

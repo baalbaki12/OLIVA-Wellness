@@ -1,0 +1,11 @@
+/* Home page */
+.oliva-home { position:relative; isolation:isolate; }
+.oliva-home:before { content:""; position:absolute; top:15px; left:0; width:145px; height:180px; opacity:.25; pointer-events:none; background:url('../assets/olive-branch.svg') center/contain no-repeat; z-index:-1; }
+.oliva-home h1 { font-size:clamp(2.8rem,5vw,4.8rem); line-height:1.15; }
+.oliva-home .hero-art { background:#e5d7b6 !important; border:9px solid #fff9ed; border-radius:190px 190px 26px 26px; box-shadow:0 20px 45px #4d422326; }
+.oliva-hero-image { display:block; width:100%; height:245px; object-fit:cover; border-radius:155px 155px 18px 18px; margin-bottom:14px; }
+.oliva-home .hero-art>div { background:#fff9ee !important; border:1px solid #dfcfae; }
+.oliva-home .hero-art .rounded-full { background:#ece6cb; }
+.oliva-home button { border-radius:30px !important; }
+.oliva-home .home-bottom { background:#f3e7d1 !important; border-color:#d6c39f !important; }
+@media(min-width:768px){.oliva-hero-image{height:285px}}
