@@ -1,6 +1,9 @@
 const { useEffect, useState } = React;
 
 function App() {
+  const todayKey = () => new Date().toLocaleDateString('en-CA');
+  const [entries, setEntries] = useState(() => { try { const x=JSON.parse(localStorage.getItem('oliva-journal')); return Array.isArray(x)?x:[]; } catch { return []; } });
+  const [history, setHistory] = useState(() => { try { const x=JSON.parse(localStorage.getItem('oliva-history')); return x && typeof x==='object' && !Array.isArray(x)?x:{}; } catch { return {}; } });
   const [page, setPage] = useState("Home");
   const [data, setData] = useState(readSavedData);
   const [goals, setGoals] = useState(readSavedGoals);
@@ -22,6 +25,10 @@ function App() {
   useEffect(() => {
     localStorage.setItem("oliva-mood", mood);
   }, [mood]);
+
+  useEffect(() => { localStorage.setItem('oliva-journal', JSON.stringify(entries)); }, [entries]);
+  useEffect(() => { localStorage.setItem('oliva-history', JSON.stringify(history)); }, [history]);
+  useEffect(() => { setHistory(previous => ({...previous, [todayKey()]: {...data, date: todayKey()}})); }, [data]);
 
   function navigate(nextPage) {
     setPage(nextPage);
@@ -67,6 +74,9 @@ function App() {
         {page === "Dashboard" && (
           <DashboardPage
             data={data}
+            entries={entries}
+            setEntries={setEntries}
+            activityHistory={Object.values(history).sort((a,b)=>a.date.localeCompare(b.date))}
             goals={goals}
             setGoals={setGoals}
             mood={mood}

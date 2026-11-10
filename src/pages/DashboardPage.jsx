@@ -37,6 +37,8 @@ function DashboardPage(props) {
         <CustomGoals goals={goals} setGoals={setGoals} />
       </div>
 
+      <WellnessLog entries={props.entries} setEntries={props.setEntries} activityHistory={props.activityHistory} />
+
       <p className="mt-6 rounded-3xl bg-[#e9e8d9] p-4 text-sm leading-6 text-[#40563b]">
         Your entries are stored in your browser with LocalStorage. They are not sent to a server.
       </p>

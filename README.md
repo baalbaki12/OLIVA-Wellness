@@ -21,6 +21,9 @@ You need Node.js and an internet connection. No npm install or Vite is required.
 
 ## Features
 - Record water, steps, sleep, and mood.
+- Log meals (breakfast, lunch, dinner, snacks) and exercise sessions with duration.
+- Review recent journal entries and delete mistakes.
+- View a daily steps chart and water/sleep/steps history.
 - Change daily goals.
 - View progress and motivational messages.
 - Values are stored in the same browser with LocalStorage.
@@ -54,3 +57,6 @@ When water, steps, or sleep reaches its saved daily goal, the Dashboard displays
 
 ### Contact Page
 ![Contact Page](docs/contact.png)
+
+## Added wellness journal
+Open Dashboard and scroll below the existing trackers to find Meal Journal, Exercise Journal, Recent Entries, and Daily Activity History. All data is saved in the same browser using LocalStorage. The new daily history starts recording when the updated website is opened; older daily totals cannot be reconstructed.
